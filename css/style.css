@@ -1,0 +1,215 @@
+/* common css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+/* header style */
+header {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3f4242;
+  padding: 0px 20px;
+  width: 100%;
+}
+
+.search_area {
+  display: flex;
+  align-items: center;
+}
+
+.search_area .logo {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.search_area .logo a {
+  text-decoration: none;
+  display: block;
+}
+
+.search_area .logo a img {
+  width: 100%;
+}
+
+.search {
+  height: 40px;
+  width: 240px;
+  background: #4f5050;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-left: 15px;
+}
+
+.search span {
+  width: 25px;
+  color: white;
+  font-size: 23px;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  flex: 1;
+  height: 100%;
+  background: unset;
+  color: white;
+  font-size: 15px;
+}
+.search input ::placeholder {
+  color: white;
+  font-size: 15px;
+}
+
+.menu_toggler {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.profile_section ul {
+  display: flex;
+  align-items: center;
+}
+
+/* ====search area end 
+===== */
+
+/* ==== nav ==== */
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 40px;
+  transition: 0.3s;
+  border-radius: 8px;
+  position: relative;
+}
+
+nav ul li a:hover {
+  background: #4f5050;
+}
+
+nav ul li a::after {
+  display: none;
+  content: attr(data-tag);
+  background: rgb(228, 227, 227);
+  position: absolute;
+  bottom: -36px;
+  left: 50%;
+  text-align: center;
+  color: rgb(66, 65, 65);
+  transform: translateX(-50%);
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+nav ul li a:hover:after {
+  display: block;
+}
+nav ul li:last-child {
+  display: none;
+}
+
+nav ul li span {
+  color: white;
+  font-size: 35px;
+}
+
+nav ul li:first-child a {
+  padding-bottom: 12px 40px;
+  border-bottom: 2px solid #2374e1;
+}
+
+.profile_section ul li {
+  margin: 0 10px;
+  background: #4f5050;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.profile_section ul li:nth-child(3) {
+  display: none;
+}
+
+.profile_section ul li:hover {
+  background-color: #6b6e6e;
+}
+
+.profile_section ul li span,
+.profile_section ul li i {
+  color: white;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+nav ul li:first-child a span {
+  color: #2374e1;
+}
+
+nav ul li:first-child a:hover {
+  background: unset;
+  border-radius: unset;
+}
+
+nav ul li:first-child a {
+  background: unset;
+  border-radius: unset;
+}
+
+.profile_section ul li:first-child img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.profile_section ul li:first-child {
+  color: white;
+  transition: 0.2s;
+  padding: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  height: unset;
+  width: unset;
+  background: unset;
+}
+
+.profile_section ul li:first-child:hover {
+  background: #4f5050;
+}
