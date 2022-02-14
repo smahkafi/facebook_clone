@@ -8,9 +8,7 @@
     display: none;
   }
   .profile_section ul li:nth-child(3) {
-    /* display: block; */
     display: flex;
-    /* align-items: center; */
   }
   .profile_section ul li:nth-child(1) {
     display: none;
@@ -23,6 +21,9 @@
     display: flex;
   }
   .groups {
+    display: none;
+  }
+  .left_side {
     display: none;
   }
 }
@@ -41,5 +42,8 @@
     color: white;
     font-size: 28px;
     margin-left: 15px;
+  }
+  .right_side {
+    display: none;
   }
 }
